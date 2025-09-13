@@ -1,0 +1,6 @@
+Ex. 5 – Cálculo médio de acessos
+
+Lista Ordenada: Busca leva em média O(n/2) acessos.
+Lista Não Ordenada: Busca leva O(n) acessos.
+Vetor Ordenado: Busca binária leva O(log n) acessos.
+ Vetor Não Ordenado: Busca sequencial leva O(n) acessos.
