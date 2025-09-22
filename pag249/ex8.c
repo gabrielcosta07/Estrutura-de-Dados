@@ -1,32 +1,22 @@
-//Ex. 8 – Contar ocorrências de valor em lista
-
 #include <stdio.h>
-#include <stdlib.h>
 
-typedef struct No {
-
-    int dado;
-
-    struct No *proximo;
-
-} No;
-
-int contarOcorrencias(No* cabeca, int valorBuscado) {
-
-    int contador = 0;
-
-    while (cabeca) {
-
-        if (cabeca->dado == valorBuscado) {
-
-            contador++;
-
-        }
-
-        cabeca = cabeca->proximo;
-
+int main() {
+    int A[3][8], B[3][8], soma[3][8], dif[3][8], i, j;
+    for (i = 0; i < 3; i++) for (j = 0; j < 8; j++) scanf("%d", &A[i][j]);
+    for (i = 0; i < 3; i++) for (j = 0; j < 8; j++) scanf("%d", &B[i][j]);
+    for (i = 0; i < 3; i++) for (j = 0; j < 8; j++) {
+        soma[i][j] = A[i][j] + B[i][j];
+        dif[i][j] = A[i][j] - B[i][j];
     }
-
-    return contador;
-
+    printf("Soma:\n");
+    for (i = 0; i < 3; i++) {
+        for (j = 0; j < 8; j++) printf("%d ", soma[i][j]);
+        printf("\n");
+    }
+    printf("Diferenca:\n");
+    for (i = 0; i < 3; i++) {
+        for (j = 0; j < 8; j++) printf("%d ", dif[i][j]);
+        printf("\n");
+    }
+    return 0;
 }

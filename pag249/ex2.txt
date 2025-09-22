@@ -1,6 +1,0 @@
-Ex. 2 – Comparar vetor vs lista ligada
-
-
-* Vetor: Rápido para acessar elementos por índice. Lento para inserir/remover no meio, pois exige deslocamento de outros elementos.
-
-* Lista Ligada: Rápida para inserções/remoções em qualquer ponto. Lenta para acessar um elemento específico, pois requer percorrer a lista desde o início.
